@@ -1,5 +1,29 @@
 // Melhorias de UI compartilhadas: botao "voltar ao topo" e animacoes ao rolar.
 
+// --- Menu mobile (hamburguer) ---
+function menuMobile() {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.navbar nav');
+  if (!toggle || !nav) return;
+
+  function fechar() {
+    nav.classList.remove('aberto');
+    toggle.classList.remove('ativo');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  toggle.addEventListener('click', () => {
+    const aberto = nav.classList.toggle('aberto');
+    toggle.classList.toggle('ativo', aberto);
+    toggle.setAttribute('aria-expanded', String(aberto));
+  });
+
+  // Fecha o menu ao clicar num link (navegacao por ancora na mesma pagina)
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', fechar));
+}
+
+menuMobile();
+
 // --- Botao voltar ao topo ---
 const btnTopo = document.createElement('button');
 btnTopo.className = 'btn-topo';
