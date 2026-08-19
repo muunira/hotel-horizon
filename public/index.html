@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Paraíso - Conforto e Requinte</title>
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">
+        <img src="img/logo.svg" alt="" class="logo-icon" />
+        <span class="logo-text">Hotel <b>Paraíso</b></span>
+      </a>
+      <nav>
+        <a href="#" class="active">Início</a>
+        <a href="#quartos">Quartos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#reservar">Reservar</a>
+        <a href="#reservas">Reservas</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="container">
+        <h1>Bem-vindo ao Hotel Paraíso</h1>
+        <p>Uma experiência única de hospedagem, conforto e tranquilidade à beira-mar.</p>
+        <a href="#reservar" class="btn btn-primary">Fazer uma reserva</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats container">
+    <div class="stat"><strong>4</strong><span>Tipos de quarto</span></div>
+    <div class="stat"><strong>24h</strong><span>Recepção</span></div>
+    <div class="stat"><strong>Wi-Fi</strong><span>Grátis</span></div>
+    <div class="stat"><strong>4.9</strong><span>Avaliação</span></div>
+  </section>
+
+  <section id="quartos" class="section container">
+    <h2 class="section-title">Nossos Quartos &amp; Diárias</h2>
+    <p class="section-subtitle">Escolha a acomodação ideal para a sua estadia.</p>
+    <div id="lista-quartos" class="rooms-grid">
+      <p class="loading">Carregando quartos...</p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <h2 class="section-title">Comodidades</h2>
+    <p class="section-subtitle">Tudo o que você precisa para uma estadia perfeita.</p>
+    <div class="amenities-grid">
+      <div class="amenity"><span class="amenity-ico">&#128683;</span><h4>Wi-Fi Grátis</h4><p>Internet de alta velocidade em todo o hotel.</p></div>
+      <div class="amenity"><span class="amenity-ico">&#127946;</span><h4>Piscina</h4><p>Piscina climatizada com vista para o mar.</p></div>
+      <div class="amenity"><span class="amenity-ico">&#127869;</span><h4>Restaurante</h4><p>Gastronomia local e internacional.</p></div>
+      <div class="amenity"><span class="amenity-ico">&#128663;</span><h4>Estacionamento</h4><p>Vagas gratuitas e seguras para hóspedes.</p></div>
+      <div class="amenity"><span class="amenity-ico">&#128704;</span><h4>Spa &amp; Bem-estar</h4><p>Massagens e tratamentos relaxantes.</p></div>
+      <div class="amenity"><span class="amenity-ico">&#127775;</span><h4>Recepção 24h</h4><p>Atendimento a qualquer hora do dia.</p></div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section-alt">
+    <div class="container about">
+      <div class="about-text">
+        <h2 class="section-title">Sobre o Hotel</h2>
+        <p>O Hotel Paraíso combina localização privilegiada, atendimento acolhedor e uma estrutura completa para tornar a sua estadia inesquecível. Contamos com piscina, restaurante, spa e estacionamento gratuito.</p>
+        <ul class="features">
+          <li>Café da manhã completo</li>
+          <li>Piscina e área de lazer</li>
+          <li>Restaurante e room service</li>
+          <li>Estacionamento gratuito</li>
+        </ul>
+      </div>
+      <div class="about-img"></div>
+    </div>
+  </section>
+
+  <section id="galeria" class="section container">
+    <h2 class="section-title">Galeria de Fotos</h2>
+    <p class="section-subtitle">Conheça os espaços do Hotel Paraíso.</p>
+    <div class="galeria-filtros">
+      <button class="filtro-btn ativo" data-filtro="todas">Todas</button>
+      <button class="filtro-btn" data-filtro="estrutura">Estrutura</button>
+      <button class="filtro-btn" data-filtro="lazer">Lazer</button>
+      <button class="filtro-btn" data-filtro="gastronomia">Gastronomia</button>
+      <button class="filtro-btn" data-filtro="acomodacoes">Acomodações</button>
+    </div>
+    <div class="galeria-grid">
+      <figure class="galeria-item" data-categoria="estrutura"><img src="img/galeria/recepcao.jpg" alt="Recepção do hotel" loading="lazy" /><figcaption>Recepção</figcaption></figure>
+      <figure class="galeria-item" data-categoria="estrutura"><img src="img/galeria/fachada.jpg" alt="Fachada do hotel" loading="lazy" /><figcaption>Fachada</figcaption></figure>
+      <figure class="galeria-item" data-categoria="lazer"><img src="img/galeria/piscina.jpg" alt="Piscina" loading="lazy" /><figcaption>Piscina</figcaption></figure>
+      <figure class="galeria-item" data-categoria="lazer"><img src="img/galeria/sala-jogos.jpg" alt="Sala de jogos" loading="lazy" /><figcaption>Sala de Jogos</figcaption></figure>
+      <figure class="galeria-item" data-categoria="lazer"><img src="img/galeria/parque.jpg" alt="Parque" loading="lazy" /><figcaption>Parque</figcaption></figure>
+      <figure class="galeria-item" data-categoria="lazer"><img src="img/galeria/lago.jpg" alt="Lago" loading="lazy" /><figcaption>Lago</figcaption></figure>
+      <figure class="galeria-item" data-categoria="lazer"><img src="img/galeria/spa.jpg" alt="Spa" loading="lazy" /><figcaption>Spa</figcaption></figure>
+      <figure class="galeria-item" data-categoria="gastronomia"><img src="img/galeria/restaurante.jpg" alt="Restaurante" loading="lazy" /><figcaption>Restaurante</figcaption></figure>
+      <figure class="galeria-item" data-categoria="gastronomia"><img src="img/galeria/cafe-da-manha.jpg" alt="Café da manhã" loading="lazy" /><figcaption>Café da Manhã</figcaption></figure>
+      <figure class="galeria-item" data-categoria="acomodacoes"><img src="img/galeria/quarto.jpg" alt="Quarto" loading="lazy" /><figcaption>Quartos</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="container">
+    <h2 class="section-title">O que dizem nossos hóspedes</h2>
+    <p class="section-subtitle">Avaliação média 4.9 de 5.</p>
+    <div class="depoimentos">
+      <blockquote class="depoimento">
+        <p>"Atendimento impecável e uma vista de tirar o fôlego. Voltaremos com certeza!"</p>
+        <footer>&#9733;&#9733;&#9733;&#9733;&#9733; &mdash; Ana Beatriz</footer>
+      </blockquote>
+      <blockquote class="depoimento">
+        <p>"Quartos limpos, café da manhã delicioso e localização perfeita à beira-mar."</p>
+        <footer>&#9733;&#9733;&#9733;&#9733;&#9733; &mdash; Carlos Menezes</footer>
+      </blockquote>
+      <blockquote class="depoimento">
+        <p>"A Suíte Master superou todas as expectativas. Experiência inesquecível."</p>
+        <footer>&#9733;&#9733;&#9733;&#9733;&#9733; &mdash; Juliana Rocha</footer>
+      </blockquote>
+    </div>
+    </div>
+  </section>
+
+  <section id="reservar" class="section container form-section">
+    <h2 class="section-title">Faça a sua reserva</h2>
+    <p class="section-subtitle">Preencha os dados abaixo e garanta a sua estadia.</p>
+    <form id="form-reserva" class="reserva-form">
+      <div class="grid-2">
+        <div class="field">
+          <label for="nome">Nome completo *</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+        <div class="field">
+          <label for="email">E-mail *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="field">
+          <label for="telefone">Telefone *</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required />
+        </div>
+        <div class="field">
+          <label for="room_type_id">Tipo de quarto *</label>
+          <select id="room_type_id" name="room_type_id" required>
+            <option value="">Selecione...</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="field">
+          <label for="checkin">Check-in *</label>
+          <input type="date" id="checkin" name="checkin" required />
+        </div>
+        <div class="field">
+          <label for="checkout">Check-out *</label>
+          <input type="date" id="checkout" name="checkout" required />
+        </div>
+        <div class="field">
+          <label for="hospedes">Hóspedes *</label>
+          <input type="number" id="hospedes" name="hospedes" min="1" value="1" required />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="observacoes">Observações</label>
+        <textarea id="observacoes" name="observacoes" rows="3" placeholder="Pedidos especiais, horário de chegada, etc."></textarea>
+      </div>
+
+      <div id="resumo" class="resumo"></div>
+      <div id="mensagem" class="mensagem"></div>
+
+      <button type="submit" class="btn btn-primary btn-block">Confirmar reserva</button>
+    </form>
+  </section>
+
+  <section id="reservas" class="section-alt">
+    <div class="container">
+      <h2 class="section-title">Reservas realizadas</h2>
+      <p class="section-subtitle">Todas as reservas registradas no sistema.</p>
+      <div id="lista-reservas" class="reservas-wrap">
+        <p class="loading">Carregando reservas...</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Pronto para relaxar?</h2>
+      <p>Garanta agora a sua estadia no Hotel Paraíso.</p>
+      <a href="#reservar" class="btn btn-primary">Reservar agora</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Hotel Paraíso - Av. Beira Mar, 1000 - (11) 4002-8922</p>
+      <p class="small">Projeto acadêmico &copy; 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>

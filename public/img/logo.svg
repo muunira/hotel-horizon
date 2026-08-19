@@ -1,0 +1,16 @@
+<svg width="46" height="46" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Hotel Paraíso">
+  <circle cx="50" cy="50" r="47" fill="#0a3457" stroke="#c9a227" stroke-width="3"/>
+  <!-- Sol -->
+  <circle cx="50" cy="40" r="12" fill="#c9a227"/>
+  <!-- Palmeira: tronco -->
+  <path d="M50 72 C48 62 47 54 49 46 L52 46 C51 54 52 62 53 72 Z" fill="#e9d489"/>
+  <!-- Folhas -->
+  <path d="M50 44 C38 34 26 34 20 40 C30 38 40 40 49 47 Z" fill="#1f8a5a"/>
+  <path d="M50 44 C62 34 74 34 80 40 C70 38 60 40 51 47 Z" fill="#26a06b"/>
+  <path d="M50 43 C42 30 34 26 27 26 C36 30 44 36 49 46 Z" fill="#26a06b"/>
+  <path d="M50 43 C58 30 66 26 73 26 C64 30 56 36 51 46 Z" fill="#1f8a5a"/>
+  <path d="M50 42 C48 30 50 22 54 16 C51 24 51 34 51 44 Z" fill="#2fb87c"/>
+  <!-- Ondas -->
+  <path d="M18 74 C26 70 32 78 40 74 C48 70 54 78 62 74 C70 70 76 78 82 74" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+  <path d="M20 82 C28 78 34 86 42 82 C50 78 56 86 64 82 C72 78 78 86 80 82" stroke="#dfe6ef" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
