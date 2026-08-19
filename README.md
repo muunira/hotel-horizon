@@ -1,5 +1,7 @@
 # Hotel Paraiso
 
+# TRABALHO DE FACULDADE
+
 Site de hotel funcional com informacoes de diarias, tipos de quartos e cadastro de reservas.
 As reservas sao salvas em um banco de dados real (SQLite, arquivo `hotel.db`).
 
