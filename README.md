@@ -1,4 +1,4 @@
-# Hotel Paraiso
+# Hotel Horizon
 
 # TRABALHO DE FACULDADE
 

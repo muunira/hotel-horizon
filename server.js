@@ -102,7 +102,7 @@ app.get('/api/reservas', asyncHandler(async (req, res) => {
 init()
   .then(() => {
     app.listen(PORT, () => {
-      console.log(`Hotel Paraiso rodando em http://localhost:${PORT}`);
+      console.log(`Hotel Horizon rodando em http://localhost:${PORT}`);
     });
   })
   .catch(err => {
